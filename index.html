@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shruti Bhore | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -9,38 +9,41 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
-      color: #343a40;
     }
     .hero {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #4c6ef5, #15aabf);
       color: white;
-      padding: 60px 20px;
+      padding: 4rem 1rem;
       text-align: center;
     }
-    .profile-pic {
+    .profile-photo {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       background-color: #dee2e6;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 20px;
+      background-size: cover;
+      background-position: center;
     }
     h2.section-title {
-      border-bottom: 2px solid #6c757d;
-      margin-bottom: 20px;
-      padding-bottom: 5px;
+      margin-top: 60px;
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
     }
-    .project {
+    .project-card, .exp-card {
       background: white;
-      border-radius: 12px;
       padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+      margin-bottom: 30px;
     }
     .footer {
       background-color: #212529;
       color: white;
-      padding: 30px 0;
+      padding: 2rem 0;
       text-align: center;
+      margin-top: 4rem;
     }
     a {
       text-decoration: none;
@@ -49,80 +52,91 @@
 </head>
 <body>
 
+  <!-- Hero -->
   <section class="hero">
-    <div class="profile-pic">
-        <img src="1.jpeg" class="profile-pic" alt="profile">
-    </div> <!-- Space for profile photo -->
+    <div class="profile-photo" style="background-image: url('https://photos.app.goo.gl/NqB1EFPbvewW2tw5A');"></div>
     <h1>Shruti Bhore</h1>
-    <p class="lead">Frontend Developer | Aspiring Data Scientist</p>
-    <p><a href="mailto:shrutibhore006@gmail.com" class="text-light">shrutibhore006@gmail.com</a> | Pune, India</p>
-    <p>
-      <a href="https://www.linkedin.com/in/shruti-bhore-310702289" class="text-light me-3">LinkedIn</a>
-      <a href="https://github.com/shruti06-ux" class="text-light me-3">GitHub</a>
-      <a href="https://shrubhore.pythonanywhere.com/" class="text-light">Live Projects</a>
-    </p>
+    <p class="lead">Frontend Developer | AI/ML Enthusiast | Data Science Learner</p>
+    <p>Pune, India • <a href="mailto:shrutibhore006@gmail.com" class="text-white">shrutibhore006@gmail.com</a></p>
+    <div class="mt-3">
+      <a href="https://www.linkedin.com/in/shruti-bhore-310702289" class="text-white me-3">LinkedIn</a>
+      <a href="https://github.com/shruti06-ux" class="text-white me-3">GitHub</a>
+      <a href="https://shrubhore.pythonanywhere.com/" class="text-white">Live Project</a>
+    </div>
   </section>
 
-  <div class="container py-5">
+  <div class="container my-5">
 
+    <!-- Education -->
     <h2 class="section-title">Education</h2>
     <ul>
       <li><strong>B.Tech in Computer Science & Engineering</strong>, T.P.C.T’s COE, Dharashiv — SGPA: 8.34 (2022–2025)</li>
-      <li><strong>Diploma in Information Technology</strong>, Government Polytechnic Solapur — 84.50% (2019–2022)</li>
+      <li><strong>Diploma in Information Technology</strong>, Govt. Polytechnic, Solapur — 84.50% (2019–2022)</li>
     </ul>
 
+    <!-- Skills -->
     <h2 class="section-title">Technical Skills</h2>
     <ul>
       <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript (Familiar)</li>
       <li><strong>Frameworks:</strong> Flask (Basic), Bootstrap</li>
-      <li><strong>Databases:</strong> MySQL</li>
       <li><strong>Tools:</strong> VS Code, GitHub, Tableau</li>
-      <li><strong>Additional:</strong> Data Science, Machine Learning, OOPs</li>
+      <li><strong>Concepts:</strong> Data Science, Machine Learning, OOPs, EDA</li>
+      <li><strong>Database:</strong> MySQL</li>
     </ul>
 
+    <!-- Projects -->
     <h2 class="section-title">Projects</h2>
 
-    <div class="project">
-      <h4>🧠 Diabetes Prediction</h4>
-      <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</p>
-      <p>Developed a predictive ML model to assess diabetes risk using medical datasets. The system performs data cleaning, EDA, and predictive modeling to support early diagnosis and preventive care.</p>
-      <p><a href="https://shrubhore.pythonanywhere.com/" target="_blank">Live Demo</a></p>
+    <div class="project-card">
+      <h4>🧪 Diabetes Prediction</h4>
+      <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</p>
+      <p>
+        Developed a machine learning model to predict diabetes risk using health-related attributes. Performed preprocessing, feature engineering, and trained models to aid in early detection. Focused on interpretability and accuracy using visual insights.
+      </p>
+      <a href="https://shrubhore.pythonanywhere.com/" target="_blank">Live Demo</a>
     </div>
 
-    <div class="project">
-      <h4>💪 AI Health and Wellness Plan</h4>
-      <p><strong>Tech Stack:</strong> Flask, Pandas, HTML/CSS</p>
-      <p>Built a web app that creates personalized wellness plans based on user inputs. Recommendations include diet, exercise, and daily health tips tailored to a selected duration.</p>
-      <p><a href="https://shruti.pythonanywhere.com/plan" target="_blank">Live Demo</a></p>
+    <div class="project-card">
+      <h4>🏃‍♀️ AI Health & Wellness Plan</h4>
+      <p><strong>Tech Stack:</strong> Flask, HTML, CSS, Pandas</p>
+      <p>
+        Built a Flask-based web application to create customized diet and wellness plans. Accepted user inputs like duration and lifestyle goals, and dynamically generated tailored routines including meals, exercise, and wellness tips. Designed a clean frontend to improve user engagement.
+      </p>
+      <a href="https://shruti.pythonanywhere.com/plan" target="_blank">View Project</a>
     </div>
 
+    <!-- Experience -->
     <h2 class="section-title">Experience</h2>
-    <p><strong>Data Science Intern — Anyatam, Pune</strong> <br/> Aug 2024 – Jan 2025</p>
-    <ul>
-      <li>Built ML models for classification/regression problems using real-world datasets</li>
-      <li>Used SQL for data extraction and automated data pipelines</li>
-      <li>Created dashboards using Tableau and presented insights to stakeholders</li>
-      <li>Performed data cleaning and EDA with Python (Pandas, NumPy, Seaborn)</li>
-    </ul>
 
+    <div class="exp-card">
+      <h5>Edunet Foundation & AICTE | Intern – Foundations of AI</h5>
+      <p><em>Apr 2025 – May 2025 | Remote</em></p>
+      <ul>
+        <li>Learned foundational concepts of Artificial Intelligence & ML using Python.</li>
+        <li>Worked on hands-on projects involving NumPy, Pandas, Matplotlib, and Scikit-learn.</li>
+        <li>Completed certification projects focused on model building, classification, and evaluation.</li>
+      </ul>
+    </div>
+
+    <!-- Activities -->
     <h2 class="section-title">Activities</h2>
-    <p><strong>Coordinator, Environment Awareness Club</strong> — Feb 2024–Present</p>
     <ul>
-      <li>Led campaigns on climate awareness and sustainability</li>
-      <li>Organized community clean-ups and plantation drives</li>
+      <li><strong>Coordinator</strong> – Environment Awareness Club, Dharashiv (Feb 2024–Present)</li>
+      <li>Organized clean-up drives, tree plantations, and sustainability campaigns.</li>
     </ul>
 
+    <!-- Interests -->
     <h2 class="section-title">Interests</h2>
     <ul>
-      <li>Solving real-world problems through Machine Learning</li>
-      <li>Frontend + Backend Web Application Development</li>
+      <li>Real-world problem solving using Machine Learning</li>
+      <li>Web development: Frontend & SQL-based backend systems</li>
     </ul>
-
   </div>
 
   <footer class="footer">
-    <p>© 2025 Shruti Bhore | Designed with ❤️ using Bootstrap</p>
+    <p>© 2025 Shruti Bhore • Designed with ♥ using Bootstrap</p>
   </footer>
 
 </body>
 </html>
+
