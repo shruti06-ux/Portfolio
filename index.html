@@ -9,26 +9,28 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
+      color: #333;
     }
-    .hero {
-      background: linear-gradient(135deg, #4c6ef5, #15aabf);
-      color: white;
-      padding: 4rem 1rem;
-      text-align: center;
+    .container-fluid{
+      display: flex;
+      min-height: 100vh;
     }
-    .profile-pic-wrapper {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+    .sidebar{
+      width; 300px;
+      bcakground-color: #0d6efd;
+      color:white;
+      padding: 40px 20px;
+    }
+
+    .sidebar img{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+   
 
     h2.section-title {
       margin-top: 60px;
@@ -56,12 +58,13 @@
   </style>
 </head>
 <body>
-
-  <!-- Hero -->
- <section class="hero text-center">
-  <div class="profile-pic-wrapper">
+  
+  <div class="container-fluid">
+  <!-- Sidebar -->
+ <aside class="sidebar text-center">
+  
     <img src="1.jpeg" class="profile-pic" alt="Profile Photo">
-  </div>
+  
   <h1>Shruti Bhore</h1>
   <p class="lead">Frontend Developer | AI/ML Enthusiast</p>
   <p>Pune, India • <a href="mailto:shrutibhore006@gmail.com" class="text-white">shrutibhore006@gmail.com</a></p>
@@ -70,7 +73,7 @@
     <a href="https://github.com/shruti06-ux" class="text-white me-3">GitHub</a>
     <a href="https://shrubhore.pythonanywhere.com/" class="text-white">Live Project</a>
   </div>
-</section>
+ </aside>
 
 
   <div class="container my-5">
